@@ -1,0 +1,32 @@
+version: "3.1"
+services:
+  miservicio_php:
+    build: .
+    container_name: miphp
+    volumes:
+      # Montamos nuestra web desde fuera en el directorio web del contenedor
+      - ./miweb/:/var/www/html
+    links:
+      - db
+    expose:
+      - 80
+    ports:
+      - 80:80
+  db:
+    container_name: misql
+    image: mysql:8.0
+    environment:
+      - MYSQL_DATABASE=insti
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=alumno
+      - MYSQL_PASSWORD=alumno
+    ports:
+      - 3306:3306
+ 
+  miservicio_phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    ports:
+     - 8080:80
+    links:
+      - db
