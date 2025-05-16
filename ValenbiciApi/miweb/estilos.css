@@ -1,44 +1,55 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
 
- body {
- font-family: Arial, sans-serif;
- margin: 20px;
- background-color: #f9f9f9;
- }
- h1 {
- text-align: center;
- color: #333;
- }
- table {
- width: 80%;
- margin: 0 auto;
- border-collapse: collapse;
- background-color: #fff;
- }
- th, td {
- border: 1px solid #ddd;
- padding: 10px;
- text-align: center;
- }
- th {
- background-color: #4CAF50;
- color: white;
- }
- tr:nth-child(even) {
-     background-color: #f2f2f2;
- }
- tr:hover {
- background-color: #ddd;
- }
- #btn{
-     text-align: center; 
-     margin-top: 20px;
- }
- #btn a {
-     display: inline-block; 
-     padding: 10px 20px; 
-     background-color: #4CAF50; 
-     color: white; 
-     text-decoration: none; 
-     border-radius: 5px; 
-     cursor: pointer;
- }
+h1 {
+    color: #2c7a7b;
+}
+
+input#busqueda {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+#btn a {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#btn a:hover {
+    background-color: #218838;
+}
