@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.IOException;
 
 public class ValenbiciApi {
+    
     private static final String API_URL =
     "https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/valenbisi-disponibilitat-valenbisi-dsiponibilidad/records?limit=20";
     public static void main(String[] args) {

@@ -22,10 +22,10 @@ public class ConexionBDD extends javax.swing.JFrame {
     private static DatosJSon dJSon;
     private static int numEst = 3;
     
-    private static final String driver = "com.mysql.cj.jdbc.Driver";//com.mysql.jdbc.Driver";
-    private static final String user = "root";
+    private static final String driver = "com.mysql.cj.jdbc.Driver";
+    private static final String user = "admin";
     private static final String pass = "alumnoalumno";
-    private static final String url = "jdbc:mysql://127.0.0.1:33306/valenbicibd"; 
+    private static final String url = "jdbc:mysql://valenbici-db.cgsblpsocnzp.us-east-1.rds.amazonaws.com/valenbicibd"; 
        /**
         * Creates new form ConexionBDD
         */
